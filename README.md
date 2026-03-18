@@ -34,18 +34,20 @@ core oop concepts in a real world scenario.
 -  Show parking full message
 ---
 
-📂 Project Structure
+📂 Project Structure(planned)
 
-parking-system/
- ├── README.md
- ├── src/
-      --> Vehicle.java
-      --> car.java
-      --> Bike.java
-      --> Truck.java
-      --> ParkingSlot.java
-      --> ParkingLot.java
-      --> Main.java
+Parking system:
+
+- README
+
+src:
+  - Vehicle.java
+  - car.java
+  - Bike.java
+  - Truck.java
+  - ParkingSlot.java
+  - ParkingLot.java
+  - Main.java
 
 ---
 
