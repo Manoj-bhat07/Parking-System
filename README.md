@@ -51,11 +51,11 @@ src:
 
 ---
 
-▶️ How to Run
+▶️ How to Run(Terminal)
 
-cd src
-javac *.java
-java Main
+- cd src
+- javac *.java
+- java Main
 
 ---
 
