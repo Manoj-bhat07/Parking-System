@@ -2,7 +2,7 @@ public class Main {
 public static void main(String[] args) {
    Vehicle car = new Car("KA16TG4433");
    Vehicle bike = new Bike("KA16TG4488");
-   // Vehicle truck = new Truck("KA16TG4499");
+   Vehicle truck = new Truck("KA16TG4499");
     //car.display();
   //  bike.display();
     //truck.display(); 
@@ -18,9 +18,12 @@ public static void main(String[] args) {
     
     parkingLot.parkVehicle(car);
     parkingLot.parkVehicle(bike);
+    parkingLot.parkVehicle(truck);
 
     parkingLot.displayParkingLot();
-    parkingLot.removeVehicle(1);
+    parkingLot.removeVehicle(2);
+    parkingLot.displayParkingLot();
+    System.err.println("After removing vehicle:");
     parkingLot.displayParkingLot();
 }
 }
