@@ -30,12 +30,12 @@ public static void main(String[] args) {
 
             break;
         case 2:
-           System.err.println("Enter the slot number to remove the vehicle: ");
+           System.out.println("Enter the slot number to remove the vehicle: ");
             int slotNumber = scanner.nextInt();
             parkingLot.removeVehicle(slotNumber);
             break;
         case 3:
-            // Display parking lot status
+            // Display parking slot status
             parkingLot.displayParkingLot();
             break;
         case 4:

@@ -3,6 +3,7 @@ class ParkingSlot{
     int SlotNumber;
     boolean isOccupied;
     Vehicle vehicle;  // Store vehicle object
+    Ticket ticket;    // Store ticket object
 
     ParkingSlot(int slotNumber) {
         this.SlotNumber = slotNumber;
@@ -14,6 +15,8 @@ class ParkingSlot{
         if (!isOccupied) {
             this.vehicle = vehicle;  // Store the vehicle object
             this.isOccupied = true;
+            ticket = new Ticket(vehicle.vehiclenumber,SlotNumber);
+            ticket.displayTicket();
             System.out.println("Vehicle parked at slot"+ SlotNumber);
         } else {
             System.out.println("Slot " + SlotNumber + " is already occupied.");
@@ -24,6 +27,7 @@ class ParkingSlot{
         if (isOccupied) {
             System.out.println("Vehicle removed from slot " + SlotNumber);
             this.vehicle = null;  // Clear the vehicle object
+            this.ticket = null;
             this.isOccupied = false;
         } else {
             System.out.println("Slot " + SlotNumber + " is already empty.");
@@ -33,6 +37,12 @@ class ParkingSlot{
     void dispaySlot(){
         if (isOccupied) {
             System.out.println("Slot " + SlotNumber + " is occupied by vehicle : " + vehicle.vehicletype);
+
+            if(ticket != null){
+                System.out.println("Ticket ID: "+ ticket.ticketid);
+                System.out.println("Vehicle Number: "+ ticket.vehicleNumber);
+                System.out.println("Entery Time: "+ticket.entryTime);
+            }
         } else {
             System.out.println("Slot " + SlotNumber + " is empty.");
         }
