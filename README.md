@@ -26,12 +26,13 @@ core oop concepts in a real world scenario.
 
 ---
 
-⚙️ Features (Planned)
+⚙️ Features
 
 -  Parking  a vehicle 
 -  Exit the vehicle
 -  Display available parking slot
 -  Show parking full message
+- show ticket ID and Entery time
 ---
 
 📂 Project Structure(planned)
